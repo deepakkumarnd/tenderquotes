@@ -21,7 +21,7 @@ production:
   username: blog
   password:
 
-production:
+staging:
   adapter: postgresql
   encoding: unicode
   database: deepak_blog_staging
