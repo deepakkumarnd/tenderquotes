@@ -36,14 +36,14 @@ GEM
     capistrano-bundler (1.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
+    capistrano-puma (0.2.3)
+      capistrano (>= 3.0)
     capistrano-rails (1.1.1)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
     capistrano-rvm (0.1.1)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
-    capistrano3-puma (0.4.1)
-      capistrano (~> 3.0)
     carrierwave (0.9.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -172,9 +172,9 @@ PLATFORMS
 DEPENDENCIES
   capistrano (~> 3.1.0)
   capistrano-bundler (~> 1.1)
+  capistrano-puma
   capistrano-rails (~> 1.1)
   capistrano-rvm (~> 0.1)
-  capistrano3-puma
   carrierwave
   coffee-rails (~> 4.0.0)
   devise

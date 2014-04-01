@@ -23,7 +23,7 @@ end
 
 group :development do
   gem 'capistrano', '~> 3.1.0'
-  gem 'capistrano3-puma', require: false
+  gem 'capistrano-puma', require: false
   gem 'capistrano-rails',   '~> 1.1', require: false
   gem 'capistrano-bundler', '~> 1.1', require: false
   gem 'capistrano-rvm',   '~> 0.1', require: false
