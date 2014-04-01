@@ -1,9 +1,10 @@
-.actions
-  = link_to 'Edit', edit_post_path(@post), class: 'btn'
-  |
-  = link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn'
-  |
-  = link_to 'Back', posts_path, class: 'btn'
+- if user_signed_in?
+  .post-actions
+    = link_to 'Edit', edit_post_path(@post)
+    | &nbsp; | &nbsp;
+    = link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' }
+
+.align-right= link_to 'Back', posts_path, class: 'btn'
 
 .title= @post.title
 .date.subtext= "#{time_ago_in_words(@post.created_at)} ago"

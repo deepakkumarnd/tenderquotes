@@ -1,0 +1,7 @@
+- form_for :profile, html: { multipart: true } do |f|
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :avatar
+    = f.file_field :avatar

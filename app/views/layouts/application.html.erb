@@ -10,9 +10,12 @@
 
   <%= render 'shared/header' %>
   <p id="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
   <div class='wrapper'>
-    <%= yield %>
+    <div class='body'>
+      <%= yield %>
+    </div>
   </div>
-
+  <%= render 'shared/footer' %>
 </body>
 </html>

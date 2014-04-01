@@ -1,9 +1,9 @@
 body, div, span, ul, li, p { margin: 0px; padding: 0px; }
-
+body { background-color: #f5f0f0; }
 a { cursor: pointer; }
 
 .btn {
-  border: solid 1px;
+  border: solid 1px #282828;
   display: table-cell;
   vertical-align: middle;
   min-width: 100px;
@@ -11,6 +11,11 @@ a { cursor: pointer; }
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  color: #282828;
+  &:hover {
+    background-color: #282828;
+    color: #fff;
+  }
 }
 
 input, button, textarea { outline: none; }
@@ -19,6 +24,10 @@ input, button, textarea { outline: none; }
   width: 800px;
   margin: auto;
   margin-left: 20%;
+
+  .body {
+    min-height: 460px;
+  }
 }
 
 .title {
@@ -78,4 +87,34 @@ form {
   .field {
     margin: 10px auto;
   }
+}
+
+.align-right {
+  float: right;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+  margin-top: 40px;
+  border-top: solid 1px #c0c0c0;
+  .footer-text {
+    text-align: center;
+    margin: 20px auto;
+    color: #615a5a;
+    font-size: 12px;
+  }
+}
+
+header {
+  .profile-actions {
+    position: relative;
+    top: -42px;
+    margin-left: 695px;
+    a { color: #615a5a; }
+  }
+}
+
+.post-actions {
+  a { color: #615a5a; }
 }

@@ -11,8 +11,10 @@ gem 'jbuilder', '~> 1.2'
 gem 'slim'
 gem 'redcarpet'
 gem 'pygments.rb'
+# todo: check if required
 gem 'nokogiri'
-
+gem 'devise'
+gem 'carrierwave'
 
 group :development, :text do
   gem 'pry'

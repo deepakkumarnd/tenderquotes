@@ -1,4 +1,8 @@
 header
   .wrapper
     h2 My Blog
-    = link_to 'New Post', new_post_path, class: 'btn'
+    - if user_signed_in?
+      .profile-actions
+        = link_to 'Profile', profile_path(current_user)
+        | &nbsp; | &nbsp;
+        = link_to 'Logout', destroy_user_session_path, method: :delete
