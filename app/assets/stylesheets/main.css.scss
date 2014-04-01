@@ -1,9 +1,16 @@
+$bg-color: #f5f0f0;
+$heading-color: #615A5A;
+$sub-heading-color: #7e7e7e;
+$border-color: #282828;
+$light-border-color: #c0c0c0;
+$text-color: #443b3b;
+
 body, div, span, ul, li, p { margin: 0px; padding: 0px; }
-body { background-color: #f5f0f0; }
+body { background-color: $bg-color; }
 a { cursor: pointer; }
 
 .btn {
-  border: solid 1px #282828;
+  border: solid 1px $border-color;
   display: table-cell;
   vertical-align: middle;
   min-width: 100px;
@@ -11,9 +18,9 @@ a { cursor: pointer; }
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  color: #282828;
+  color: $border-color;
   &:hover {
-    background-color: #282828;
+    background-color: $border-color;
     color: #fff;
   }
 }
@@ -33,21 +40,23 @@ input, button, textarea { outline: none; }
 .title {
   font-family: "Times New Roman";
   font-size: 32px;
-  color: #615a5a;
+  color: $heading-color;
   a {
-    color: #615a5a;
+    color: $heading-color;
+    border-bottom: solid 1px;
+    text-decoration: none;
   }
 }
 
 .subtext {
-  color: #7e7e7e;
+  color: $sub-heading-color;
   font-size: 20px;
   line-height: 28px;
 }
 
 .content {
   font-family: Arial;
-  color: #443b3b;
+  color: $text-color;
   h1, h2, h3, h4, h5, h6 { margin: 5px auto; }
   p {
     font-size: 22px;
@@ -62,21 +71,23 @@ input, button, textarea { outline: none; }
 }
 
 .input-post-title {
+  background-color: $bg-color;
   border: none;
-  width: 100%;
-  height: 40px;
-  font-size: 32px;
+  color: $heading-color;
   font-family: "Times New Roman";
-  color: #615a5a;
+  font-size: 32px;
+  height: 40px;
+  width: 100%;
 }
 
 .input-post-content {
+  background-color: $bg-color;
   border: none;
-  width: 100%;
-  height: 600px;
+  color: $text-color;
   font-family: Arial;
   font-size: 22px;
-  color: #443b3b;
+  height: 600px;
+  width: 100%;
 }
 
 .list-posts {
@@ -94,27 +105,27 @@ form {
 }
 
 footer {
-  position: relative;
+  border-top: solid 1px $light-border-color;
   bottom: 0px;
   margin-top: 40px;
-  border-top: solid 1px #c0c0c0;
+  position: relative;
   .footer-text {
-    text-align: center;
-    margin: 20px auto;
-    color: #615a5a;
+    color: $heading-color;
     font-size: 12px;
+    margin: 20px auto;
+    text-align: center;
   }
 }
 
 header {
   .profile-actions {
+    margin-left: 695px;
     position: relative;
     top: -42px;
-    margin-left: 695px;
-    a { color: #615a5a; }
+    a { color: $heading-color; }
   }
 }
 
 .post-actions {
-  a { color: #615a5a; }
+  a { color: $heading-color; }
 }
