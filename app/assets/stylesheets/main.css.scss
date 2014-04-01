@@ -112,7 +112,7 @@ footer {
   .footer-text {
     color: $heading-color;
     font-size: 12px;
-    margin: 20px auto;
+    margin: 20px auto 10px auto;
     text-align: center;
   }
 }
@@ -128,4 +128,14 @@ header {
 
 .post-actions {
   a { color: $heading-color; }
+}
+
+.social-links {
+  text-align: center;
+  margin-bottom: 10px;
+  .wrap {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  img { height: 20px; }
 }
