@@ -15,9 +15,17 @@ gem 'pygments.rb'
 gem 'nokogiri'
 gem 'devise'
 gem 'carrierwave'
+gem 'puma'
 
-group :development, :text do
+group :development, :test do
   gem 'pry'
+end
+
+group :development do
+  gem 'capistrano', '~> 3.1.0'
+  gem 'capistrano-rails',   '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
+  gem 'capistrano-rvm',   '~> 0.1', require: false
 end
 
 group :doc do

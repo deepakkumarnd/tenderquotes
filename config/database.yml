@@ -20,3 +20,11 @@ production:
   pool: 5
   username: blog
   password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: deepak_blog_staging
+  pool: 5
+  username: deploy
+  password:
