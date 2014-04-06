@@ -63,6 +63,12 @@ input, button, textarea { outline: none; }
     line-height: 28px;
     text-align: justify;
     margin: 20px 0;
+
+    a {
+      border-bottom: dotted 1px $light-border-color;
+      color: $text-color;
+      text-decoration: none;
+    }
   }
 }
 
@@ -138,4 +144,10 @@ header {
     margin: 0 5px;
   }
   img { height: 20px; }
+}
+
+.highlight {
+  background-color: #fff;
+  border: solid 1px $light-border-color;
+  padding-left: 20px;
 }
