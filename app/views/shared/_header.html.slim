@@ -1,6 +1,7 @@
 header
   .wrapper
-    h2 My Blog
+    a.logo(href='/')
+      h2 My Blog
     - if user_signed_in?
       .profile-actions
         = link_to 'Profile', profile_path(current_user)

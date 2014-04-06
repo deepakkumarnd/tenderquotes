@@ -151,3 +151,18 @@ header {
   border: solid 1px $light-border-color;
   padding-left: 20px;
 }
+
+#notice {
+  border: solid 1px;
+  color: #D2935E;
+  font-size: 18px;
+  margin: auto;
+  padding: 6px;
+  text-align: center;
+  width: 400px;
+}
+
+.logo {
+  color: $heading-color;
+  text-decoration: none;
+}

@@ -9,8 +9,9 @@
 <body>
 
   <%= render 'shared/header' %>
-  <p id='notice'><%= notice %></p>
-  <p class='alert'><%= alert %></p>
+  <% if notice.present? %>
+    <p id='notice'><%= notice %></p>
+  <% end %>
   <div class='wrapper'>
     <div class='body'>
       <%= yield %>
