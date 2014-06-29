@@ -15,6 +15,7 @@ gem 'pygments.rb'
 gem 'nokogiri'
 gem 'devise'
 gem 'carrierwave'
+gem 'rmagick'
 gem 'puma'
 
 group :development, :test do

@@ -1,9 +1,9 @@
 header
   .wrapper
     a.logo(href='/')
-      h2 My Blog
+      h2 The Amazing Factory
     - if user_signed_in?
       .profile-actions
-        = link_to 'Profile', profile_path(current_user)
+        = link_to 'Profile', profile_path
         | &nbsp; | &nbsp;
         = link_to 'Logout', destroy_user_session_path, method: :delete

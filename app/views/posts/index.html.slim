@@ -5,4 +5,4 @@ ul.list-posts
   - @posts.each do |post|
     li
       .title= link_to post.title, post
-      .date.subtext= "#{time_ago_in_words(post.created_at)} ago"
+      .date.subtext= "#{time_ago_in_words(post.created_at)} ago by #{post.author.name}"
