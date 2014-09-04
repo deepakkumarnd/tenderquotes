@@ -4,10 +4,18 @@ $sub-heading-color: #7e7e7e;
 $border-color: #282828;
 $light-border-color: #c0c0c0;
 $text-color: #443b3b;
+$default-color: #333;
 
 body, div, span, ul, li, p { margin: 0px; padding: 0px; }
-body { background-color: $bg-color; }
-a { cursor: pointer; }
+body {
+    background-color: $bg-color;
+    color: $default-color;
+}
+
+a {
+    cursor: pointer;
+    color: $heading-color;
+}
 
 .btn {
   border: solid 1px $border-color;
@@ -31,6 +39,7 @@ input, button, textarea { outline: none; }
   width: 800px;
   margin: auto;
   margin-left: 20%;
+  padding: 10px 0;
 
   .body {
     min-height: 460px;
@@ -165,8 +174,19 @@ header {
 .logo {
   color: $heading-color;
   text-decoration: none;
+  font-size: 24px;
 }
 
 .profile {
   margin: 30px 0 0 0;
+}
+
+.pull-right {
+    display: inline-block;
+    float: right;
+}
+
+.pull-left {
+    display: inline-block;
+    float: left;
 }
