@@ -1,5 +1,5 @@
 - if user_signed_in?
-  .align-right= link_to 'New Post', new_post_path, class: 'btn'
+  = link_to 'New Post', new_post_path, class: 'btn pull-right'
 
 ul.list-posts
   - @posts.each do |post|
