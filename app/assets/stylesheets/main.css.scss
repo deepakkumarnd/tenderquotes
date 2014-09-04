@@ -19,14 +19,14 @@ a {
 
 .btn {
   border: solid 1px $border-color;
-  display: table-cell;
-  vertical-align: middle;
+  display: inline-block;
   min-width: 100px;
   height: 30px;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
   color: $border-color;
+  line-height: 1.9em;
   &:hover {
     background-color: $border-color;
     color: #fff;
@@ -113,10 +113,6 @@ form {
   .field {
     margin: 10px auto;
   }
-}
-
-.align-right {
-  float: right;
 }
 
 footer {
