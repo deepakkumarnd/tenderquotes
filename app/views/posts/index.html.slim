@@ -4,6 +4,9 @@
 ul.list-posts
   - @posts.each do |post|
     li
-      .title= post.content
+      .title
+        | &ldquo;
+        = post.content
+        | &rdquo;
       .subtext= post.title
       .date.subtext= "posted #{time_ago_in_words(post.created_at)} ago by #{post.author.name}"
