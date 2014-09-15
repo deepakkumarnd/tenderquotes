@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.text_field :title, placeholder: 'Title', class: 'input-post-title' %>
+    <%= f.text_field :title, placeholder: 'Said by', class: 'input-post-title' %>
   </div>
   <div class="field">
-    <%= f.text_area :content, placeholder: 'Content ...', class: 'input-post-content' %>
+    <%= f.text_area :content, placeholder: 'Quote it here', class: 'input-post-content' %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Save" %>
   </div>
 <% end %>

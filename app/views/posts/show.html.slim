@@ -2,10 +2,10 @@
   .post-actions
     = link_to 'Edit', edit_post_path(@post)
     | &nbsp; | &nbsp;
-    = link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' }
+    = link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' }
 
 = link_to 'Back', posts_path, class: 'btn pull-right'
 
 .title= @post.title
-.date.subtext= "#{time_ago_in_words(@post.created_at)} ago"
+.date.subtext= "#{time_ago_in_words(@post.created_at)} ago by #{@post.author.name}"
 .content= markdown(@post.content)

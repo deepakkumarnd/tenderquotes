@@ -1,8 +1,9 @@
 - if user_signed_in?
-  = link_to 'New Post', new_post_path, class: 'btn pull-right'
+  = link_to 'New Quote', new_post_path, class: 'btn pull-right'
 
 ul.list-posts
   - @posts.each do |post|
     li
-      .title= link_to post.title, post
-      .date.subtext= "#{time_ago_in_words(post.created_at)} ago by #{post.author.name}"
+      .title= post.content
+      .subtext= post.title
+      .date.subtext= "posted #{time_ago_in_words(post.created_at)} ago by #{post.author.name}"
