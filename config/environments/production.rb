@@ -78,4 +78,15 @@ Blog::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
   # config.assets.initialize_on_precompile = false
+  config.action_mailer.smtp_settings = {
+    user_name: 'deepakkumarnd',
+    password: 'qq47sendgrid',
+    domain: 'http://tenderquotes.herokuapp.com',
+    address: 'smtp.sendgrid.net',
+    port: 2525,
+    authentication: :plain,
+    enable_starttls_auto: true
+  }
+
+  config.action_mailer.default_url_options = { host: 'http://tenderquotes.herokuapp.com' }
 end
