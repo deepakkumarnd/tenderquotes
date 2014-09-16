@@ -16,6 +16,7 @@ gem 'devise'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'puma'
+gem 'kaminari'
 
 group :development, :test do
   gem 'pry'

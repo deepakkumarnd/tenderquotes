@@ -10,3 +10,4 @@ ul.list-posts
         | &rdquo;
       .subtext= post.title
       .date.subtext= "posted #{time_ago_in_words(post.created_at)} ago by #{post.author.name}"
+= paginate @posts

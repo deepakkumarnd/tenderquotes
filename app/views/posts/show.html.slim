@@ -8,4 +8,7 @@
 
 .title= @post.title
 .date.subtext= "#{time_ago_in_words(@post.created_at)} ago by #{@post.author.name}"
-.content= markdown(@post.content)
+.content
+  | &ldquo;
+  = @post.content
+  | &rdquo;

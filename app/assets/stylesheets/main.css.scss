@@ -53,7 +53,7 @@ input[type="submit"] {
   }
 }
 
-.title {
+.title, .content {
   font-family: "Times New Roman";
   font-size: 24px;
   color: $heading-color;
@@ -69,25 +69,9 @@ input[type="submit"] {
   line-height: 28px;
 }
 
-.content {
-  font-family: Arial;
-  color: $text-color;
-  h1, h2, h3, h4, h5, h6 { margin: 5px auto; }
-  p {
-    font-size: 22px;
-    line-height: 28px;
-    margin: 20px 0;
-
-    a {
-      border-bottom: dotted 1px $light-border-color;
-      color: $text-color;
-      text-decoration: none;
-    }
-  }
-}
-
 .date {
   font-style: italic;
+  font-size: 16px;
 }
 
 .input-post-title {
@@ -101,13 +85,9 @@ input[type="submit"] {
 }
 
 .input-post-content {
-  background-color: $bg-color;
-  border: none;
-  color: $text-color;
-  font-family: "Times New Roman";
+  @extend .input-post-title;
   font-size: 22px;
   height: 150px;
-  width: 100%;
 }
 
 .list-posts {
@@ -143,6 +123,7 @@ header {
 }
 
 .post-actions {
+  margin: 0 0 10px 0;
   a { color: $heading-color; }
 }
 
