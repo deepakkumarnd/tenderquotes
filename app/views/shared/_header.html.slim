@@ -1,6 +1,8 @@
 header
   .wrapper
-    a.logo(href='/')
+    a.logo-wrap href='/'
+      .logo
+      label TenderQuotes
     .pull-right
       - if user_signed_in?
         = link_to 'Profile', profile_path
