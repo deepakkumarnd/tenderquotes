@@ -12,5 +12,8 @@ ul.list-posts
         = post.content
         | &rdquo;
       .subtext= post.title
-      .date.subtext= "posted #{time_ago_in_words(post.created_at)} ago by #{post.author.name}"
+      .date.subtext
+        = "posted #{time_ago_in_words(post.created_at)} ago by #{post.author.name}"
+        span.actions
+          = link_to 'view', post_path(post)
 = paginate @posts
