@@ -10,6 +10,7 @@ body, div, span, ul, li, p { margin: 0px; padding: 0px; }
 body {
     background-color: $bg-color;
     color: $default-color;
+    width: 80%;
 }
 
 a {
@@ -44,14 +45,10 @@ input[type="submit"] {
 }
 
 .wrapper {
-  width: 800px;
+  width: 80%;
   margin: auto;
   margin-left: 20%;
   padding: 10px 0;
-
-  .body {
-    min-height: 460px;
-  }
 }
 
 .title, .content {
@@ -94,7 +91,7 @@ input[type="submit"] {
 .input-search {
     @extend .input-post-title;
     font-size: 20px;
-    width: 200px;
+    width: 160px;
     height: 30px;
 }
 
@@ -123,7 +120,6 @@ footer {
 
 header {
   .profile-actions {
-    margin-left: 695px;
     position: relative;
     top: -42px;
     a { color: $heading-color; }
