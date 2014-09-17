@@ -6,6 +6,6 @@ class TextSanitizer
   def sanitize!
     @text.strip!
     @text.gsub!(/\s{2,}/, ' ')
-    @text
+    @text.gsub!(/^('|")*|('|")*$/, '')
   end
 end

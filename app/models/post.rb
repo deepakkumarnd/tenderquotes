@@ -8,7 +8,7 @@ class Post < ActiveRecord::Base
 
   def sanitize_post!
     self.content = TextSanitizer.new(content).sanitize!
-    self.title = title.titleize
+    self.title = title.strip.titleize
   end
 
   def self.search(query)
