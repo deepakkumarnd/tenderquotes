@@ -17,6 +17,7 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'puma'
 gem 'kaminari'
+gem 'textacular'
 
 group :development, :test do
   gem 'pry'

@@ -3,6 +3,10 @@ header
     a.logo-wrap href='/'
       .logo
       label TenderQuotes
+    .search-wrap
+      form action="/posts"
+        input.input-search type="text" name="query" placeholder="Type here to search" autocomplete="off" autofocus="true"
+        a#search.btn-search
     .pull-right
       - if user_signed_in?
         = link_to 'Profile', profile_path

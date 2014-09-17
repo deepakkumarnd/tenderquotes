@@ -1,4 +1,5 @@
 class Post < ActiveRecord::Base
+  extend Textacular
   belongs_to :author, class_name: 'User', foreign_key: 'user_id'
 
   validates :checksum, uniqueness: { message: 'Quote already exists, please add a new one' }
@@ -7,6 +8,12 @@ class Post < ActiveRecord::Base
 
   def sanitize_post!
     self.content = TextSanitizer.new(content).sanitize!
+  end
+
+  def self.search(query)
+    return self if query.nil?
+    query = query.strip.downcase
+    self.basic_search(query)
   end
 
   private

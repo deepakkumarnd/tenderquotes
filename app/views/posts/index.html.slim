@@ -2,6 +2,9 @@
   = link_to 'New Quote', new_post_path, class: 'btn pull-right'
 
 ul.list-posts
+  - if @posts.size == 0
+    li
+      .title Oops!, no results found, try with some other keywords
   - @posts.each do |post|
     li
       .title
