@@ -1,19 +1,18 @@
-- if user_signed_in?
-  = link_to 'New Quote', new_post_path, class: 'btn pull-right'
+- if @posts.size == 0
+  .alert.alert-warning role="alert" Oops!, no results found, try with some other keywords
 
-ul.list-posts
-  - if @posts.size == 0
-    li
-      .title Oops!, no results found, try with some other keywords
+ul.list-group
   - @posts.each do |post|
-    li
-      .title
+    li.list-group-item
+      .quote
         | &ldquo;
         = post.content
         | &rdquo;
-      .subtext= post.title
-      .date.subtext
-        = "posted #{time_ago_in_words(post.created_at)} ago by #{post.author.name}"
+      .title= post.title
+      .subtext
+        span.date= "posted #{time_ago_in_words(post.created_at)} ago by #{post.author.name}"
         span.actions
           = link_to 'view', post_path(post)
-= paginate @posts
+ul.pager
+  li.previous= link_to_previous_page @posts, 'Prev'
+  li.next= link_to_next_page @posts, 'Next'
