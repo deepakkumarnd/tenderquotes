@@ -15,7 +15,10 @@
 
       form.navbar-form.navbar-left role="search"
         .form-group
-          input.form-control placeholder="Search quotes here ..." type="text" name="query" autofocus="true"
+          .input-group
+            input.form-control placeholder="Search quotes here ..." type="text" name="query" autofocus="true"
+              span.input-group-btn
+                button class="btn btn-default" type="submit" Go
 
       ul.nav.navbar-nav.navbar-right
         - if user_signed_in?

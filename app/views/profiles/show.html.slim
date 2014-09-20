@@ -1,5 +1,6 @@
-= link_to 'Edit Profile', edit_profile_path, class: 'btn'
-.profile
-  .author= current_user.name
-  .email= current_user.email
-  .avatar= image_tag(current_user.avatar.small.url)
+= link_to 'Edit Profile', edit_profile_path, class: 'btn btn-default pull-right'
+.panel.panel-default
+  .panel-body
+    .author= current_user.name
+    .email= current_user.email
+    .avatar= image_tag(current_user.avatar.small.url)

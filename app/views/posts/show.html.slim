@@ -4,7 +4,7 @@
     | &nbsp; | &nbsp;
     = link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' }
 
-= link_to 'Back', posts_path, class: 'btn btn-default'
+= link_to 'Back', posts_path, class: 'btn btn-default pull-right'
 
 .title= @post.title
 .date.subtext= "#{time_ago_in_words(@post.created_at)} ago by #{@post.author.name}"

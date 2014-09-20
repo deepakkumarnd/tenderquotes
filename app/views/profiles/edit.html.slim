@@ -1,11 +1,12 @@
-= link_to 'Cancel', profile_path, class: 'btn pull-right'
-.profile
-  = form_for @user, url: profile_path, method: :patch, html: { multipart: true } do |f|
-    .field
-      = f.label :name
-      = f.text_field :name
-    .field
-      = f.label "Profile picture"
-      = f.file_field :avatar
-    .field
-      = f.submit 'Save'
+= link_to 'Cancel', profile_path, class: 'btn btn-default pull-right'
+.panel.panel-default
+  .panel-body
+    = form_for @user, url: profile_path, method: :patch, html: { multipart: true } do |f|
+      .form-group
+        = f.label :name
+        = f.text_field :name, class: "form-control"
+      .form-group
+        = f.label :avatar, "Choose profile picture"
+        = f.file_field :avatar, class: "form-control"
+      .form-group
+        = f.submit 'Save', class: "btn btn-default"
