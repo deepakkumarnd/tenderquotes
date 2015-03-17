@@ -1,1 +1,1 @@
-# A bloggin applicaiton from scratch
+# Source code for tenderquotes.herokuapp.com
