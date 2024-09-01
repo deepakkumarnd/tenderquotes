@@ -1,30 +1,24 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: blog_development
+  host: localhost
+  database: tq_development
   pool: 5
-  username: deepak
-  password:
+  username: postgres
+  password: postgres
 test:
   adapter: postgresql
   encoding: unicode
-  database: blog_test
+  database: tq_test
+  host: localhost
   pool: 5
-  username: deepak
-  password:
+  username: postgres
+  password: postgres
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: blog_production
+  database: tq_production
   pool: 5
-  username: blog
-  password:
-
-staging:
-  adapter: postgresql
-  encoding: unicode
-  database: deepak_blog_staging
-  pool: 5
-  username: deploy
+  username: postgres
   password:
