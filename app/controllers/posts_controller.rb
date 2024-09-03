@@ -21,17 +21,17 @@ class PostsController < ApplicationController
     @post.sanitize_post!
 
     if @post.save
-      format.html { redirect_to @post, notice: 'Post was successfully created.' }
+      redirect_to @post, notice: 'Post was successfully created.'
     else
-      format.html { render action: 'new' }
+      render action: 'new'
     end
   end
 
   def update
     if @post.update(post_params)
-      format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+      redirect_to @post, notice: 'Post was successfully updated.'
     else
-      format.html { render action: 'edit' }
+      render action: 'edit'
     end
   end
 
